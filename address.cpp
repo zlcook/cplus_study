@@ -4,7 +4,7 @@
 
 //全局变量
 int global_a = 10;
-char * global_b = "hello";
+const char * global_b = "hello";
 
 int main(int argc, char** argv) {
     printf("命令行参数/\"address\"的地址:\t0x%12lX\n", (size_t)argv[0]);
