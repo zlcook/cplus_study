@@ -1,10 +1,19 @@
 
 #include <stdlib.h>
 #include <stdio.h>
+#include <iostream>
 
 //全局变量
 int global_a = 10;
 const char * global_b = "hello";
+
+bool foo(int x ) {
+  if (x > 0) {
+    return false;
+  } else {
+    return true;
+  }
+}
 
 int main(int argc, char** argv) {
     printf("命令行参数/\"address\"的地址:\t0x%12lX\n", (size_t)argv[0]);
